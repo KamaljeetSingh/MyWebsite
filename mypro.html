@@ -1,0 +1,167 @@
+<html>
+<title>
+KamaljeetProfile
+</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">     
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="index.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+/*Slider Arrows Show/Hide*/
+$(document).ready(function(){
+		$("#slider").hover(function(){
+			$("a.control_next,a.control_prev").show();
+			
+			}),
+			
+		$("#slider").mouseleave(function(){
+			$("a.control_next,a.control_prev").hide();
+			
+			});
+		});
+
+/*Links Active*/
+$(document).ready(function()
+{$("#head ul li a").click(function() {
+  $("#head ul li a").css("color","white");
+  $("#head ul li a").mouseenter(function(){$(this).css("color","CCFF66")});
+  $("#head ul li a").mouseleave(function(){$(this).css("color","white")});
+  $(this ).css("color","yellow");
+   $(this).mouseleave(function(){$(this).css("color","yellow")});
+});
+  });
+
+</script>
+
+
+
+</head>
+
+<body>
+<header id="head">
+<div class="user"><i class="fa fa-user"></i><i>ProfileMania</i></div>
+<div class="social">
+<a href="https://www.facebook.com/kmlsngh" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://plus.google.com/u/0/100116644883957405866" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+</div>
+<ul>
+
+<li><a id="hactive" href="#home">Home </a><div class="vert">| </div></li>
+<li><a id="aactive" href="#about">About </a><div class="vert">|  </div></li>
+<li><a id="mactive" href="#achieve">My Life </a><div class="vert">|  </div></li>
+<li><a id="moactive" href="#project">Project</a></li>
+</ul>
+
+
+
+</header>
+<div id="home">
+<div class="line">________________________</div>
+<div class="prof">
+<div class="name">Kamaljeet Singh</div>
+<div class="div1">
+<img src="kamaljeet.jpg">
+
+</div>
+<div class="status"><p>Student,B.Tech<br>Computer Science<br><br>Jaypee Institute Of Information Technology</p></div> 
+</div>
+<div class="line2">________________________</div>
+</div>
+
+
+<div id="about">
+
+<div class="l1" id="rep">about</div>
+<div class="p1">
+<p>An interesting , entertaining , lovable , jolly and a little bit of studious person who only and only believe in the positivity and hard work. I just see my life as an infinte-sized room of learning , improvising and loving.I love to explore and learn new things especially the geeks' stuff. I have always loved to entertain people , my friends or my family. Supporting my beloved and caring for them have become a part of my life.I have been raised in a Punjabi family and yes as usual we love to talk loud and love to drink !</p>
+</div> 
+<div class="user"><i class="fa fa-user"></i></div>
+
+
+</div>
+
+
+<div id="achieve">
+<h1>Incredible Moments</h1>
+<p>these moments are my life which I am always going to cherish</p>
+<div id="slider">
+  <a class="control_next"><i class="fa fa-arrow-circle-right"></i></a>
+  <a class="control_prev"><i class="fa fa-arrow-circle-left"></i></a>
+  <ul>
+  
+    <li><img src="3384_1445604732.jpg" width="910" height="550"></li>
+    <li><img src="42140_1435761949.jpg" width="910" height="550"></li>
+	<li><img src="DSC_0458.jpg" width="910" height="550"></li>
+    <li><img src="DSC01318.jpg" width="910" height="550"></li>
+    <li><img src="IMG-20150422-WA0009.jpg" width="910" height="550"></li>
+  </ul>  
+  
+</div>
+</div>
+
+<div id="project">
+<h1>Online Election Voting System</h1>
+<p>A interactive user friendly system made to cast the votes online. Our team foccused entirely on the security and database preservation which are indeed the biggest challenges faced during online casting. The voting system was made for a state elections. Our team-work and dedication made our project to implement successfully.</p>
+
+<div class="space">
+<h2>Our Team</h2>
+<div class="teams">
+	<div class="mem"><img src="kamaljeet.jpg">
+	<h3>Kamaljeet Singh</h3>
+	<h5>Scripting And Programming</h5>
+	</div>
+	<div class="mem"><img src="garvit.jpg">
+	<h3>Garvit Agarwal</h3>
+	<h5>Database Management</h5>
+	</div>
+	<div class="mem"><img src="shubhra.jpg">
+	<h3>Shubhra Singh</h3>
+	<h5>Database Management</h5>
+	</div>
+	<div class="mem"><img src="rishabh.jpg">
+	<h3>Rishabh Jain</h3>
+	<h5>Concept And Programming</h5>
+	
+	</div>
+	
+</div>
+</div>
+</div>
+<footer>
+<p>Copyright 2016 <i class="fa fa-copyright"></i> ProfileMania Pvt Ltd. All Rights Reserved<br><br>Created By KamaljeetSingh</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
